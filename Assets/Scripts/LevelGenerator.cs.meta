@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 09f710a9626ddc74b97ce515b6c17f9a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - outsideWall: {fileID: 21300000, guid: 88964bd24fb3a2545ac469198bf3bd5e, type: 3}
+  - outsideCorner: {fileID: 21300000, guid: d7f89bbe7a99ef644a4e23ed0796e671, type: 3}
+  - insideWall: {fileID: 21300000, guid: 54c0ea0535cdaa042b40154d3c4d1280, type: 3}
+  - insideCorner: {fileID: 21300000, guid: cb8a6ff6d1a9e41458f0e71aff3b7069, type: 3}
+  - tJunction: {fileID: 21300000, guid: 0247942b9202f78479f82f15ea6b23f4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
