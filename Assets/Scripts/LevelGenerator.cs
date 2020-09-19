@@ -21,9 +21,9 @@ public class LevelGenerator : MonoBehaviour
         //Sprite inSideWall = Resources.Load("Inside Wall", typeof(Sprite)) as Sprite;
        //Sprite inSideCorner = Resources.Load("Inside Corner", typeof(Sprite)) as Sprite;
         Vertical = (int)Camera.main.orthographicSize;
-        Horizontal = Vertical * (Screen.width / Screen.height);
-        Columns = Horizontal * 2;
-        Rows = Vertical * 2;
+        //Horizontal = Vertical * (Screen.width / Screen.height);
+        //Columns = Horizontal * 2;
+        //Rows = Vertical * 2;
         int[,] Maze =
      {
         {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
@@ -67,6 +67,7 @@ public class LevelGenerator : MonoBehaviour
             }
         }
 
+        #region Fourth Quadrant
         for (int i = 0; i < 15; i++)
         {
             for (int j = 0; j < 14; j++)
@@ -204,13 +205,17 @@ public class LevelGenerator : MonoBehaviour
                         break;
                     case 7:
                         s.sprite = sprites[41];
+                        s.transform.Rotate(0, 0, 180);
+                        s.transform.position = new Vector3(13.9f, -28.9f, 0f);
                         break;
                     default:
                         break;
                 }
             }
         }
+        #endregion
 
+        #region Third Quadrant
         for (int i = 0; i < 15; i++)
         {
             for (int j = 0; j < 14; j++)
@@ -362,13 +367,17 @@ public class LevelGenerator : MonoBehaviour
                         break;
                     case 7:
                         s.sprite = sprites[40];
+                        s.transform.Rotate(0, 0, 180);
+                        s.transform.position = new Vector3(12.9f, -28.9f, 0f);
                         break;
                     default:
                         break;
                 }
             }
         }
+        #endregion
 
+        #region Second Quadrant
         for (int i = 0; i < 15; i++)
         {
             for (int j = 0; j < 14; j++)
@@ -536,7 +545,9 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
+        #endregion
 
+        #region First Quadrant
         for (int i = 0; i < 15; i++)
         {
             for (int j = 0; j < 14; j++)
@@ -686,7 +697,7 @@ public class LevelGenerator : MonoBehaviour
                         s.sprite = sprites[43];
                         break;
                     case 6:
-                        s.sprite = sprites[44];
+                        s.sprite = sprites[44]; 
                         break;
                     case 7:
                         s.sprite = sprites[41];
@@ -696,6 +707,7 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
+        #endregion
     }
     void Start()
     {
