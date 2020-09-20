@@ -6,11 +6,6 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public Sprite[] sprites;
-    public Sprite outsideWall;
-    public Sprite outsideCorner;
-    public Sprite insideWall;
-    public Sprite insideCorner;
-    public Sprite tJunction;
     public int[,] Maze;
     int Vertical, Horizontal, Columns, Rows;
     
@@ -197,12 +192,7 @@ public class LevelGenerator : MonoBehaviour
                         }
 
                         break;
-                    case 5:
-                        s.sprite = sprites[43];
-                        break;
-                    case 6:
-                        s.sprite = sprites[44];
-                        break;
+
                     case 7:
                         s.sprite = sprites[41];
                         s.transform.Rotate(0, 0, 180);
@@ -359,12 +349,7 @@ public class LevelGenerator : MonoBehaviour
                         }
 
                         break;
-                    case 5:
-                        s.sprite = sprites[43];
-                        break;
-                    case 6:
-                        s.sprite = sprites[44];
-                        break;
+
                     case 7:
                         s.sprite = sprites[40];
                         s.transform.Rotate(0, 0, 180);
@@ -531,12 +516,6 @@ public class LevelGenerator : MonoBehaviour
                         }
 
                         break;
-                    case 5:
-                        s.sprite = sprites[43];
-                        break;
-                    case 6:
-                        s.sprite = sprites[44];
-                        break;
                     case 7:
                         s.sprite = sprites[40];
                         break;
@@ -692,12 +671,6 @@ public class LevelGenerator : MonoBehaviour
                             s.sprite = sprites[24];
                         }
 
-                        break;
-                    case 5:
-                        s.sprite = sprites[43];
-                        break;
-                    case 6:
-                        s.sprite = sprites[44]; 
                         break;
                     case 7:
                         s.sprite = sprites[41];
