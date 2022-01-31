@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerPellets : MonoBehaviour
 {
+    public bool ScareOrNot;
     public AudioSource audioController;
     void start()
     {
@@ -11,9 +12,10 @@ public class PowerPellets : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Pacman")
+        if (collision.gameObject.name == "PacStudent")
         {
             Destroy(gameObject);
+            ScareOrNot = true;
             audioController.Play();
         }
     }

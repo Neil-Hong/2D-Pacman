@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pellet : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Pellet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Pacman")
+        if (collision.gameObject.name == "PacStudent")
         {
             Destroy(gameObject);
             audioController.Play();
